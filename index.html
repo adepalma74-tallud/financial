@@ -618,7 +618,7 @@ Per ogni posizione restituisci un oggetto JSON con:
 Rispondi SOLO con un array JSON valido, nessun testo aggiuntivo, nessun markdown.
 Esempio: [{"symbol":"GOLD","value":5627,"pl":127.5,"plPct":2.3},{"symbol":"BTC","value":1419,"pl":-45.2,"plPct":-3.1}]` });
 
-    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${gemini}`, {
+    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${gemini}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ contents: [{ parts }] })
